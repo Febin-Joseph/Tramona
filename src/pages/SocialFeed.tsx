@@ -9,6 +9,7 @@ const SocialFeed: FC = () => {
   const handleContinue = () => {
     navigate('/invite');
   };
+
   return (
     <div className="max-container padding-container mb-5">
       <div className="flex flex-col items-center justify-center pt-10">

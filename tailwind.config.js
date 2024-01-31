@@ -10,6 +10,10 @@ export default {
         white: {
           10: '#FFFFFF',
         },
+        gray: {
+          10: '#787878',
+          20: '#D5D8DE'
+        },
       },
       screens: {
         xs: '400px',
@@ -21,7 +25,7 @@ export default {
       },
       borderRadius: {
         0: '0px',
-        '1xl': '8px',
+        '1xl': '4px',
         '3xl': '22px',
       },
     },
