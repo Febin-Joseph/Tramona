@@ -24,7 +24,7 @@ const RefCodeInput: FC<RefCodeInput> = () => {
             type="text"
             value={digit}
             onChange={(e) => handleChange(index, e.target.value)}
-            className="w-14 h-16 text-4xl text-center border-2 border-gray-20 rounded-md uppercase"
+            className="w-12 h-14 lg:w-14 lg:h-16 text-4xl text-center border-2 border-gray-20 rounded-md uppercase"
           />
         ))}
       </div>
