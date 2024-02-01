@@ -8,7 +8,8 @@ const Nav: FC = () => {
     relative z-30 py-5 bg-white-10 shadow-md h-[70px]">
       <a href="/">
         <img src={logo} alt="tramona-logo" />
-      </a>
+      </a> 
+      {/* //Passing heading */}
       <h1 className="text-[20px] font-bold pl-3">Home</h1>
     </nav>
   );

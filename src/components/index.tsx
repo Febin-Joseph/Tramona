@@ -1,3 +1,4 @@
+// THIS FILE FACILITATES EASIER IMPORTS OF COMPONENTS IN OTHER FILES
 import Button from "./common/Button";
 import Nav from "./common/Nav";
 import Timeline from "./common/Timeline";

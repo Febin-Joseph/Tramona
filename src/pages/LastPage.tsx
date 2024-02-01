@@ -11,12 +11,13 @@ const LastPage: FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center pt-10">
-      <Timeline data={5} />
+      {/* last step */}
+      <Timeline data={5} /> 
       <div className="mt-80">
         <Button
           label="Back to Start"
           color="bg-blue-10"
-          onClick={handleContinue}
+          onClick={handleContinue}// Handles navigation to the first page
         />
       </div>
     </div>

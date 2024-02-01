@@ -1,3 +1,4 @@
+// THIS FILE FACILITATES EASIER IMPORTS OF PAGES IN OTHER FILES
 import Home from "./Home";
 import Home2 from "./Home2";
 import InviteFrnd from "./InviteFrnd";

@@ -16,7 +16,9 @@ const ReferralCode: FC = () => {
         <div className="mt-8 text-center max-w-[400px]">
           <h6 className="font-bold text-[32px]">Enter referral code</h6>
           <div className="mt-32">
-            <RefCodeInput onContinue={handleContinue} />
+            
+          {/* // Handles code entering in component file itself */}
+            <RefCodeInput />
           </div>
         </div>
 

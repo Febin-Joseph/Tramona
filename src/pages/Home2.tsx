@@ -6,7 +6,7 @@ const Home2: FC = () => {
   const navigate = useNavigate();
 
   const handleContinue = () => {
-    navigate('/social');
+    navigate('/social');// Next page Navigation
   };
 
   return (

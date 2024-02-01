@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-interface ButtonProps {
+interface ButtonProps {// Props
   onClick?: () => void;
   label: string;
   color?: string;

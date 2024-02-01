@@ -1,3 +1,4 @@
+//THIS FILE HANDLES THE WHOLE PAGE ROUTES OF THE APPLICATION
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home, Home2, InviteFrnd, LastPage, ReferralCode, SocialFeed } from "../pages";
 

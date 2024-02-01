@@ -6,12 +6,14 @@ const InviteFrnd: FC = () => {
   const navigate = useNavigate();
 
   const handleContinue = () => {
-    navigate('/code');
+    navigate('/code');// Page navigation
   };
 
   return (
+    //Custom styles are available in index.css
     <div className="max-container padding-container mb-5">
       <div className="flex flex-col items-center justify-center pt-10">
+        {/* //passing value as 3 steps completed before */}
         <Timeline data={3} />
         <div className="mt-8 text-center max-w-[400px]">
           <h6 className="font-bold text-[32px]">Invite your friends</h6>
@@ -28,8 +30,9 @@ const InviteFrnd: FC = () => {
           <Button
             label="Share"
             color="bg-blue-10"
-            onClick={handleContinue}
+            onClick={handleContinue}// Page Navigation
           />
+          {/* Skip button is currently inactive */}
           <Button
             label="Skip"
             className="text-[14px] font-medium text-gray-500"
