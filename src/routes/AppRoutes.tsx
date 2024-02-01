@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Home, Home2, Host, InviteFrnd, LastPage, ReferralCode, SocialFeed } from "../pages";
+import { Home, Home2, InviteFrnd, LastPage, ReferralCode, SocialFeed } from "../pages";
 
 const AppRoutes = () => {
   return (
@@ -10,7 +10,6 @@ const AppRoutes = () => {
         <Route path="/social" element={<SocialFeed />}></Route>
         <Route path="/invite" element={<InviteFrnd />}></Route>
         <Route path="/code" element={<ReferralCode />}></Route>
-        <Route path="/host" element={<Host />}></Route>
         <Route path="/last" element={<LastPage />}></Route>
       </Routes>
     </BrowserRouter>

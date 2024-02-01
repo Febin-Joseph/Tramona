@@ -3,7 +3,6 @@ import Nav from "./common/Nav";
 import Timeline from "./common/Timeline";
 import InviteInput from "./InviteInput";
 import RefCodeInput from "./RefCodeInput";
-import SkipBtn from "./SkipBtn";
 
 export {
     Button,
@@ -11,5 +10,4 @@ export {
     Timeline,
     InviteInput,
     RefCodeInput,
-    SkipBtn,
 }
