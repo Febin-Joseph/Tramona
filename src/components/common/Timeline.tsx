@@ -30,19 +30,19 @@ const Timeline: React.FC<TimelineProps> = ({ data }) => {
     return timelineItems;
   };
 
-  const renderConnectorLines = () => {
-    const connectorLines = [];
+  // const renderConnectorLines = () => {
+  //   const connectorLines = [];
 
-    for (let i = 1; i < 6; i++) {
-      connectorLines.push(
-        <div
-          key={i}
-          className={`flex h-[3px] w-[25px] bg-black self-stretch`}
-        ></div>
-      );
-    }
-    return connectorLines;
-  };
+  //   for (let i = 1; i < 6; i++) {
+  //     connectorLines.push(
+  //       <div
+  //         key={i}
+  //         className={`flex h-[3px] w-[25px] bg-black self-stretch`}
+  //       ></div>
+  //     );
+  //   }
+  //   return connectorLines;
+  // };
 
   return (
     <div className="flex flex-col space-y-4 items-center">
