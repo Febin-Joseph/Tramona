@@ -39,3 +39,13 @@ body {
     @apply flex items-center justify-end;
   }
 }
+
+.step {
+  @apply border-2 w-[22px] h-[22px] rounded-full bg-white-10;
+}
+.active .step {
+  @apply bg-sky-600;
+}
+.complete .step {
+  @apply bg-blue-10 border-blue-10;
+}

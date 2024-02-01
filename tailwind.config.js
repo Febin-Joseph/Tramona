@@ -12,7 +12,8 @@ export default {
         },
         gray: {
           10: '#787878',
-          20: '#D5D8DE'
+          20: '#D5D8DE',
+          30: '#9CA3AF'
         },
       },
       screens: {

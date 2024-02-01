@@ -8,51 +8,34 @@ interface TimelineProps {
 const Timeline: React.FC<TimelineProps> = ({ data }) => {
   const renderTimeline = () => {
     const timelineItems = [];
-  
+
     for (let i = 1; i <= 6; i++) {
       const isActive = i <= data;
+      const isNextActive = i === data + 1;
+
       timelineItems.push(
         <div
           key={i}
-          className={`border-2 w-[22px] h-[22px] rounded-full ${isActive ? 'bg-blue-10 border-blue-10' : ''} relative `}
+          className={`relative flex flex-col justify-center items-center w-[58px] lg:w-16  ${isActive ? 'active' : ''} ${isActive ? 'complete' : ''}`}
         >
-          {isActive && 
-            <div className="absolute inset-1/2 w-3 h-3 bg-white rounded-full"></div>
-          }
-          {isActive && isActive && (
-            <div className="absolute inset-0 flex items-center justify-center">
-              <img src={check} alt="check" />
-            </div>
+          {i !== 1 && (
+            <div className={`bg-gray-20 absolute w-full h-[3px] items-center justify-center right-2/4 ${isActive ? 'border-2 border-blue-10' : ''} ${isNextActive ? 'border-2 border-blue-10' : ''}`}></div>
           )}
+
+          <div className={`flex items-center justify-center z-10 relative step ${isNextActive ? 'border-2 border-blue-10' : 'border-gray-30'}`}>
+            {isActive ? <img src={check} alt="check" /> : ''}
+            {!isActive && isNextActive ? <div className='bg-blue-10 w-[6px] h-[6px] rounded-full'></div> : ''}
+          </div>
         </div>
       );
     }
     return timelineItems;
   };
 
-  // const renderConnectorLines = () => {
-  //   const connectorLines = [];
-
-  //   for (let i = 1; i < 6; i++) {
-  //     connectorLines.push(
-  //       <div
-  //         key={i}
-  //         className={`flex h-[3px] w-[25px] bg-black self-stretch`}
-  //       ></div>
-  //     );
-  //   }
-  //   return connectorLines;
-  // };
-
   return (
-    <div className="flex flex-col space-y-4 items-center">
-      <div className="flex space-x-7 items-center justify-center">
-        {renderTimeline()}
-      <div className="flex items-center space-x-10">
-        {/* {renderConnectorLines()} */}
-      </div>
+    <div className="flex justify-between">
+      {renderTimeline()}
     </div>
-      </div>
   );
 };
 
