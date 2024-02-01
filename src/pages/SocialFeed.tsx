@@ -13,7 +13,7 @@ const SocialFeed: FC = () => {
   return (
     <div className="max-container padding-container mb-5">
       <div className="flex flex-col items-center justify-center pt-10">
-        <Timeline />
+        <Timeline data={2}/>
         <div className="mt-8 text-center max-w-[500px]">
           <h6 className="font-semibold text-[18px]">We have a social feed.</h6>
           <p className="text-[14px] font-medium mt-14 lg:mt-16 px-6">
