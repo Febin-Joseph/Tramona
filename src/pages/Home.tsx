@@ -11,7 +11,7 @@ const Home: FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center pt-10">
-      <Timeline />
+      <Timeline data={0}/>
       <div className="mt-80">
         <Button
           label="Continue"
