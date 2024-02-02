@@ -6,12 +6,12 @@ const AppRoutes = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route index path="/" element={<Home />}></Route>
-        <Route path="/step2" element={<Home2 />}></Route>
-        <Route path="/social" element={<SocialFeed />}></Route>
-        <Route path="/invite" element={<InviteFrnd />}></Route>
-        <Route path="/code" element={<ReferralCode />}></Route>
-        <Route path="/last" element={<LastPage />}></Route>
+        <Route index path="/" element={<Home />} />
+        <Route path="/step2" element={<Home2 />} />
+        <Route path="/social" element={<SocialFeed />} />
+        <Route path="/invite" element={<InviteFrnd />} />
+        <Route path="/code" element={<ReferralCode />} />
+        <Route path="/last" element={<LastPage />} />
       </Routes>
     </BrowserRouter>
   )
